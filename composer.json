@@ -1,0 +1,27 @@
+{
+    "name": "thesheetz",
+    "description": "A proxy for google sheets",
+    "keywords": ["rest", "router", "google sheets", "api"],
+    "homepage": "https://github.com/danesjenovdan/thesheet",
+    "authors": [
+        {
+            "name": "dnd"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "5.6.1"
+        }
+    },
+    "require": {
+        "asimlqt/php-google-spreadsheet-client": "3.0.*",
+        "google/apiclient": "^2.0",
+        "phpFastCache/phpFastCache": "^6.0"
+    },
+    "scripts": {
+      "create": "php install/create.php ",
+      "demo": "php -S 0.0.0.0:8080/demo/ ",
+      "start": "php -S 0.0.0.0:8080 ",
+      "start7": "php7 -S 0.0.0.0:8080 "
+    }
+}

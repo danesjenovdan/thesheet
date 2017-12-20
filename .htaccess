@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin *
+</IfModule>
+
+# remove the next 3 lines if you see a 500 server error
+php_flag register_globals off
+php_flag magic_quotes_gpc off
+php_value display_errors 0
+
+FileETag none
+ServerSignature Off
+
+Options All -Indexes
+
+DirectoryIndex index.php index.html
